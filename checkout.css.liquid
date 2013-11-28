@@ -1,0 +1,294 @@
+/************************************
+*	Shopify Checkout Overrides Styles
+*	Add this file to the assets folder
+*	Overrides  and Flexible grid - (As much as possible)
+*
+*	Available under the MIT license
+*	Copyright (c) Vanamco AG 2013
+*	http://www.vanamco.com
+*	@vanamco
+*
+*************************************/
+
+
+/************************************
+Global
+*************************************/
+
+/* Undo background and gradient */
+body{background: #fff!important;} 
+
+/* Undo background and gradient again */
+body, #main, #container, #header, #footer, {
+	background: #fff !important;
+	color:#444444;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+/************************************
+Grid
+*************************************/
+
+#container,
+#container.slim,
+#main,
+#container.slim #main,
+#header,
+#container.slim #header,
+#footer,
+#container.slim #footer{width:100%; max-width: 880px; background:#fff;padding:0;}
+.footer{float: left;}
+
+#main{
+	overflow: hidden;
+}
+
+/************************************
+Logo
+*************************************/
+
+/* Insert your own logo (upload separately into the assets folder) */
+
+#logo { 
+	height: 100px; /* Replace with height of your logo file */
+	background: url(logo.png) center no-repeat;
+}
+
+/************************************
+Typo
+*************************************/
+
+#header > h1{
+	text-align:center;
+}
+
+/* Hide the name of the store because we got this nifty logo now */
+#header > h1 span.title {
+  //display:none;
+}
+
+.group h3{
+	color:#444444;
+	padding-bottom: 0.8em;
+	letter-spacing:1px;
+}
+
+.subtitle{
+	display:none;
+}
+
+#steps{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#cost{
+	font: 300% "Lucida Grande",Helvetica,Arial,sans-serif;
+	margin-bottom: 0;
+}
+
+/************************************
+Thumbs
+*************************************/
+
+#thumbs span {
+	color: #999;
+	font-size: 11px;
+}
+#thumbs h3{
+	color: #999;
+	font-size: 13px;
+}
+
+/* Undo overview background and borders */
+#main #overview {
+	background: #fff;
+	border: none;
+}
+#main #overview > * {
+	border: none;
+}
+#main #thumbs div {
+	border: none;
+}
+
+/************************************
+Form element
+*************************************/
+
+label{
+	color: #555;
+}
+
+.form td.lbl{
+	width: 30%;
+}
+.form td input{
+	width: 100%;
+}
+
+.form td{
+	width: 60%;
+	height: 25px;
+}
+
+#email{
+	padding: 2em;
+	background: #fff;
+}
+
+.group, #email, #buttons{
+	/* border: none; */
+}
+
+#purchase-form .group{
+	background-color: #ffffff;
+}
+
+/* Center-align the subtitle */
+#tagline {
+	text-align: center;
+}
+
+
+li#billing_address_province_li{
+	margin-right: 0px;
+	float: right;
+}
+
+
+/* Hide the name of the store because we got this nifty logo now */
+#tagline .title {
+	display: none;
+}
+
+.form input{
+		height: 20px;
+		font-size: 1em;
+		padding: 4px;
+	}
+
+#buttons{
+	float: left;
+	width: 100%;
+	background:#fff;
+	box-sizing: border-box;
+}
+
+#addresses{
+	background: #fff;
+}
+
+/************************************
+Buttons
+*************************************/
+
+
+#buttons input{
+	background-color: #6FB305;
+	color: #fff;
+	cursor: pointer;
+	padding: 1em!important;
+	text-transform: uppercase; 
+	letter-spacing: 0.2em;
+	font-size: 13px;
+	font-weight: 600;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1;
+	margin: 0px;
+	border: 0;
+	float: right;
+
+}
+
+.form td input.short{
+	width: 100%;
+}
+
+/************************************
+Info bar - Hints - Steps - Cost
+*************************************/
+
+#info-bar{
+	color: #468847;
+	background-color: #dff0d8;
+	border-bottom: 1px solid #d6e9c6;
+}
+#overview .hint{
+	color: lightslategrey;
+}
+
+
+#wallet {
+	margin-left: auto;
+	width: 240px;
+}
+
+.address-notification {
+	color:#3a87ad;
+	background: #d9edf7;
+	border: 1px solid #bce8f1;
+}
+
+
+/************************************
+Errors
+*************************************/
+
+.field-with-errors {
+
+	background-color: #fcf8e3;
+	border-color: #fbeed5;
+
+	padding: 3px 5px;
+	line-height: 140%;
+}
+.field-with-errors input{
+	border: 1px solid #FED600
+}
+
+
+.error-message{
+	color: #c09853!important;
+}
+
+
+/************************************
+Smaller screens
+*************************************/
+
+@media (max-width: 679px){
+	.gleft{
+		width: 100%;
+	}
+	
+	.gright {
+		margin-left: 0;
+		padding-left: 0;
+		width: 100%;
+	}
+
+	#wallet{
+		width: 100%;
+		float: left;
+		clear: both;
+	}
+
+	#email input{
+		width: 100%;
+	}
+	#cancel-purchase{
+		width: 100%;
+		display: block;
+		float: left;
+		margin-top: 5em;
+	}
+	#buttons input{
+		float: none;
+		width: 100%;
+	}
+
+
+}
