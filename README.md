@@ -17,8 +17,9 @@ To change the logo, name your logo image file "logo.png" and add it to the asset
 
 Working demo: http://devicelab.vanamco.com/
 
-![screenshot]("https://dl.dropboxusercontent.com/u/56886453/remote-hosted-images/shopify-theme-checkout.jpg")
+![image]("https://raw.github.com/vanamco/shopify-checkout-page/master/shopify-theme-checkout.jpg")
 ---
+
 
 MIT License
 
