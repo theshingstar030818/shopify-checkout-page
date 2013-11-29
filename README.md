@@ -7,17 +7,18 @@ A checkout page theme for Shopify e-commerce system.
 Simple - Responsive - clean - customizable
 
 
-Use:
+#####Use:
 
 
-Simply add the "checkout.css.liquid" file the the "assets" folder.
+Simply add the "checkout.css.liquid" file the the "assets" folder of you Shopify project.
 
 
 To change the logo, name your logo image file "logo.png" and add it to the assets folder.
 
 Working demo: http://devicelab.vanamco.com/
 
-![image]("https://raw.github.com/vanamco/shopify-checkout-page/master/shopify-theme-checkout.jpg")
+![alt text](https://raw.github.com/vanamco/shopify-checkout-page/master/shopify-theme-checkout.jpg "Image of the webpage")
+
 ---
 
 
